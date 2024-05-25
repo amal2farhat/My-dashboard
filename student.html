@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-    <title>Return Books</title>
+    <title>Student</title>
 </head>
 
 <body>
@@ -90,23 +90,20 @@
             <div class="items1">
                 <div class="add">
                     <div>
-                        <h1>RETURN BOOK</h1>
+                        <h1>ADD NEW STUDENT</h1>
                         <div class="addbook">
-                            <div> <input type="text" id="studentid" name="studentid" value="" required
-                                    placeholder="Enter student ID" /></div>
-                            <div> <input type="number" id="name" name="name" value="" required
-                                    placeholder="Enter student name" /></div>
+                            <div> <input type="text" id="firstname" name="firstname" value="" required
+                                    placeholder="Enter First Name" /></div>
+                            <div> <input type="text" id="lastname" name="lastname" value="" required
+                                    placeholder="Enter Last Name" /></div>
                         </div>
                         <div class="addbook">
-                            <div> <input type="text" id="isbn" name="isbn" value="" required
-                                    placeholder="Enter ISBN" /></div>
-                                    <div> <input type="text" id="title" name="title" value="" required
-                                        placeholder="Enter book title" /></div>
-                        </div>
+                            <div> <input type="file" id="fileUpload" /></div>
+                            </div>
                       
-                    
+                      
                         <div class="addbook">
-                            <div> <button type="button">Return Book</button></div>
+                            <div> <button type="button">Add Student</button></div>
                          
                         </div>
                     </div>
@@ -117,12 +114,12 @@
                 
                        
                         <div class="addbook2">
-                            <div><label name="">Date</label></div>
+                            <div><label name="">Image</label></div>
                             <div><label name="">Student ID</label></div>
-                            <div><label name="">Student Name</label></div>
-                            <div><label name="">ISBN</label></div>
-                            <div><label name="">Title</label></div>
-                       
+                            <div><label name="">First Name</label></div>
+                            <div><label name="">Last Name</label></div>
+                        
+                            <div><label name="">Action</label></div>
                         </div>
                       
                        
@@ -134,15 +131,28 @@
                        
                     <div class="addbook3">
                         
-                        <div class="rowaddbook3"  >23/5/2024</div>
-                        <div class="rowaddbook3" ><label name="">20</label></div>
-                        <div class="rowaddbook3"><label name="">amal</label></div>
-                        <div class="rowaddbook3"> <label name="">999999</label></div>
-                        <div class="rowaddbook3"><label name="">Lovely Bones</label></div>
-                        
+                        <div class="rowaddbook3"  ><img src="images/student.png" > </div>
+                        <div class="rowaddbook3" ><label name=""> 25</label></div>
+                        <div class="rowaddbook3"><label name="">Amal</label></div>
+                        <div class="rowaddbook3"> <label name="">Farhat</label></div>
+                   
 
                         
-                        
+                        <div class="first" style="display: flex;  margin-bottom: 5px;">
+                          
+                            <div>
+                                <button type="button" class="" style="width: 80px; margin-right: 5px; margin-bottom: 8px;
+                                 border: none; height: 25px;  box-sizing: border-box; border-radius: solid 1px green;
+    
+                                        background-color: green;
+                                        color: white;">Edit</button>
+                                                                
+                                <br> <button type="button" class="" style="width: 80px; margin-right: 5px; border: none; height: 25px;
+                                  box-sizing: border-box; border-radius: solid 1px red;  color: white; background-color: red;">Delete</button>
+                            </div>
+                         
+                            
+                        </div>
                         
                         <!-- <div style="display: grid; grid-template-rows: repeat(2 , 1fr);   gap: 2px; height: 60px; background-color: red;">
                            
@@ -163,6 +173,7 @@
                   
                    
              <hr>
+            
                 
             </div>
 
