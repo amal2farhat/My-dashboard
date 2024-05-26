@@ -17,6 +17,7 @@
     align-items: center;
     z-index: 1;
 }
+
 .logo h2{
     color: black;
 }
@@ -52,6 +53,9 @@
 
 
 }
+.user2admin{
+    width: 50px; height: 50px;
+}
 .user img{
     position: absolute;
     top: 0;
@@ -60,11 +64,14 @@
     width: 100%;
     object-fit: cover;
 }
-
+.admin2circle{
+    display: flex; margin-top: 5px;
+}
 /* sidebar */
 .admin{
     /* position: fixed; */
-    display: flex;
+    display: grid; grid-template-rows: repeat(2 , 1fr);
+    /* display: flex; */
     top: 60px;
     margin-left: 10px;
     width: 260px;
@@ -73,6 +80,7 @@
 .user2{
     /* background-color: red; */
     /* position: relative; */
+    display: flex;
     margin-top: 25px;
     width: 260px;
     height: 70px;
@@ -92,7 +100,6 @@
 .online{
     font-size: 12px;
 }
-
 .sidebar{
     position: fixed;
     top: 60px;
@@ -573,12 +580,14 @@ text-align: center;
  
   .addbook{
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     margin-top: 20px;
     
     
   }
+
   .addbook div{
+    
     flex: 50%;
   }
  .addbook input[type=text], .addbook input[type=number],select,
@@ -676,6 +685,21 @@ text-align: center;
   height: 60px;
     padding-left: 10px;
   }
+  .first{
+    
+    display: flex;  margin-bottom: 5px;
+  }
+  .firstbtn{
+    width: 80px; margin-right: 5px; margin-bottom: 8px;
+    border: none; height: 25px;  box-sizing: border-box; border-radius: solid 1px green;
+
+           background-color: green;
+           color: white;
+  }
+  .secondbtn{
+    width: 80px; margin-right: 5px; border: none; height: 25px;
+                                  box-sizing: border-box; border-radius: solid 1px red;  color: white; background-color: red;
+  }
 .addbook3 img{
     width: 50px;
     height: 30px;
@@ -706,8 +730,12 @@ text-align: center;
     background-color: red;
     color: white;
 }
-
+.hr{
+    
+    width: 60%; margin: 30px auto; 
+}
 hr{
+
   background-color: #463610;
   
 }
@@ -747,8 +775,8 @@ hr{
     grid-template-columns: 1fr;
     }
 }
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
+/* @media only screen and (min-width: 600px) {
+  
     .search{
         position: relative;
         width: 40%;
@@ -756,46 +784,246 @@ hr{
     }
   
 
-  }
+  } */
 
-@media(max-width:600px){
-    .topbar{
-        width: 100%;
-        height: 100px;
-        grid-template-columns: repeat(3,1fr);
-    }
-    .myDIV{
-        grid-template-columns: 1fr;
-    }
-    .logo h2{
-        font-size: 20px;
-    }
-    .search{
-        /* width: 80%; */
-        position: relative;
-        width: 90%;
-        justify-self: center;
-    }
-    .search input{
-        padding: 0 20px;
-    }
-    .fa-bell{
-        margin-right: 5px;
-    }
-    .user{
-   
-        position: relative;
-        width: 30px;
-        height: 30px;
-    
-    
-    }
-    /* .user{
-        width: 40px;
-        height: 40px;
-    } */
-    dought-chart{
-        padding: 10px;
-    }
+
+
+    @media(max-width:600px){
+    /* Mobile-first approach */
+.topbar {
+    position: fixed;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+    width: 100%;
+    height: 60px;
+    padding: 0 10px; /* Adjusted padding for smaller screens */
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.4fr 1fr; /* Adjusted column widths */
+    align-items: center;
+    z-index: 1;
 }
+
+.logo h2 {
+    color: black;
+    font-size: 20px;
+}
+
+.search {
+    position: relative;
+    width: 70%; /* Adjusted width for smaller screens */
+    justify-self: center;
+}
+
+.search input {
+    width: 100%;
+    height: 40px;
+    padding: 0 30px; /* Adjusted padding for smaller screens */
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background: #F4F1EA;
+}
+.fa-bell{
+    margin-right: 5px;
+}
+.search i {
+    position: absolute;
+    right: 10px; /* Adjusted position for smaller screens */
+    top: 13px; /* Adjusted position for smaller screens */
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    top: 60px;
+    width: 25%; /* Adjusted width for smaller screens */
+    height: calc(100% - 120px);
+    background-color: #F4F1EA;
+    overflow-x: hidden;
+}
+
+.main2,
+.main {
+    /* position: absolute; */
+    top: 60px;
+    width: calc(100% - 25%); /* Adjusted width for smaller screens */
+    left: 25%;
+    min-height: calc(100vh - 60px);
+    background: #f5f5f5;
+    padding: 20px; /* Adjusted padding for smaller screens */
+}
+.myDIV {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusted card width */
+    gap: 10px;
+    padding: 25px 10px; /* Adjusted padding for smaller screens */
+}
+.addbook div {
+    flex: 0 0 100%; /* Initially, each div takes up full width */
+    max-width: 100%; /* Ensure divs don't exceed full width */
+    margin-bottom: 10px; /* Add some bottom margin for spacing between rows */
+}
+
+/* Responsive adjustments for buttons */
+.prev {
+    margin-top: 2px;
+    display: flex;
+    flex-wrap: wrap; /* Adjusted wrapping for smaller screens */
+}
+
+.num2 {
+    background-color: #80CAFF;
+    width: 30px;
+    height: 30px;
+    padding-top: 7px;
+    text-align: center;
+    color: #747171;
+    margin-right: 5px; /* Adjusted margin for smaller screens */
+    margin-bottom: 5px; /* Adjusted margin for smaller screens */
+}
+.add,
+.add2 {
+    margin: 5% auto; /* Center the element vertically and horizontally */
+    text-align: center;
+    width: 80%; /* Occupy 80% of the container's width */
+    height: 90%; /* Adjust the height */
+    background-color: #F4F1EA;
+}
+
+.add h1,
+.add2 h1 {
+    padding-top: 10px;
+}
+
+.addbook {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.addbook div {
+    flex: 100%; /* Each div initially occupies 100% width */
+    max-width: 100%; /* Ensure divs don't exceed full width */
+    margin-bottom: 10px; /* Add some bottom margin for spacing between rows */
+}
+
+.addbook input[type=text],
+.addbook input[type=number],
+select,
+.addbook input[type=file] {
+    width: 90%; /* Occupy full width */
+    padding: 20px 20px;
+    margin-right: 15px;
+    margin-left: 5px;
+    box-sizing: border-box;
+    border: none;
+}
+/* .addbook div{
+     width: 100%;
+} */
+.button {
+    color: #747171;
+    height: 30px;
+    border: 1px solid #AFAFAF;
+    margin-right: 5px; /* Adjusted margin for smaller screens */
+    margin-bottom: 5px; /* Adjusted margin for smaller screens */
+}
+.addbook2 div {
+    flex: 0 0 calc(50% - 20px); /* Two columns layout on medium screens with spacing */
+    margin: 5px; /* Add spacing between columns */
+}
+.showall {
+    margin: 1% 1%;
+    text-align: start;
+    width: 98%;
+    height: auto; /* Adjust height based on content */
+    background-color: #F4F1EA;
+}
+
+.addbook2 {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: center; /* Align items horizontally at the center */
+    font-size: 14px;
+}
+
+.addbook2 div {
+    flex: 0 0 100%; /* Each div occupies full width on small screens */
+    font-weight: bold;
+    padding: 12px;
+    box-sizing: border-box; /* Include padding in element's total width */
+}
+
+.showall2 {
+    margin: 1% 1%;
+    text-align: justify;
+    width: 98%;
+    background-color: #ffff;
+}
+
+.addbook3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Align items horizontally at the center */
+    margin-top: 20px;
+}
+
+.addbook3 .rowaddbook3 {
+    height: auto; /* Adjust height based on content */
+    padding-top: 10px;
+}
+
+.addbook3 div {
+    flex: 0 0 100%; /* Each div occupies full width on small screens */
+    box-sizing: border-box;
+    font-size: 14px;
+    padding: 5px; /* Add some padding */
+}
+
+.first {
+    display: flex;
+    flex-wrap: wrap; /* Ensure buttons wrap on small screens */
+    margin-bottom: 5px;
+}
+
+.firstbtn, .secondbtn {
+    width: calc(50% - 5px); /* Two buttons side by side with some spacing */
+    margin-right: 5px;
+    margin-bottom: 8px;
+    border: none;
+    height: 25px;
+    border-radius: 1px;
+    color: white;
+}
+
+.firstbtn {
+    background-color: green;
+}
+
+.secondbtn {
+    background-color: red;
+}
+.hr {
+    display: none;
+    margin-bottom: 50px;
+    width: 90%; /* Adjust width for smaller screens */
+}
+.charts {
+    display: grid;
+    grid-template-columns: 1fr; /* Adjusted column layout for smaller screens */
+    grid-gap: 20px;
+    width: 100%;
+    padding: 20px;
+    padding-top: 0;
+}
+.chart,
+.chartt {
+    width: 100%;
+}
+}
+
+ 
+
 
