@@ -775,44 +775,35 @@ hr{
     grid-template-columns: 1fr;
     }
 }
-<<<<<<< HEAD:dashboard.css
-/* @media only screen and (min-width: 600px) {
-  
-    .search{
-        position: relative;
-        width: 40%;
-        justify-self: center;
-    }
-  
 
-  } */
-=======
 
->>>>>>> ca5064d08070fb1545cf193c55f77294a1da6eec:style.css
+
+
+
 
 
 
     @media(max-width:600px){
-<<<<<<< HEAD:dashboard.css
-    /* Mobile-first approach */
-=======
+
  
->>>>>>> ca5064d08070fb1545cf193c55f77294a1da6eec:style.css
+
+ 
+
 .topbar {
     position: fixed;
     background: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
     width: 100%;
     height: 60px;
-<<<<<<< HEAD:dashboard.css
+
     padding: 0 10px; /* Adjusted padding for smaller screens */
     display: grid;
     grid-template-columns: 1fr 2fr 0.4fr 1fr; /* Adjusted column widths */
-=======
+
     padding: 0 10px; /*  */
     display: grid;
     grid-template-columns: 1fr 2fr 0.4fr 1fr; 
->>>>>>> ca5064d08070fb1545cf193c55f77294a1da6eec:style.css
+
     align-items: center;
     z-index: 1;
 }
@@ -824,22 +815,22 @@ hr{
 
 .search {
     position: relative;
-<<<<<<< HEAD:dashboard.css
+
     width: 70%; /* Adjusted width for smaller screens */
-=======
+
     width: 70%; 
->>>>>>> ca5064d08070fb1545cf193c55f77294a1da6eec:style.css
+
     justify-self: center;
 }
 
 .search input {
     width: 100%;
     height: 40px;
-<<<<<<< HEAD:dashboard.css
+
     padding: 0 30px; /* Adjusted padding for smaller screens */
-=======
+
     padding: 0 30px;
->>>>>>> ca5064d08070fb1545cf193c55f77294a1da6eec:style.css
+
     font-size: 16px;
     outline: none;
     border: none;
@@ -851,24 +842,24 @@ hr{
 }
 .search i {
     position: absolute;
-<<<<<<< HEAD:dashboard.css
+
     right: 10px; /* Adjusted position for smaller screens */
     top: 13px; /* Adjusted position for smaller screens */
-=======
+
     right: 10px; 
     top: 13px;
->>>>>>> ca5064d08070fb1545cf193c55f77294a1da6eec:style.css
+
     cursor: pointer;
 }
 
 .sidebar {
     position: fixed;
     top: 60px;
-<<<<<<< HEAD:dashboard.css
+
     width: 25%; /* Adjusted width for smaller screens */
-=======
+
     width: 25%; 
->>>>>>> ca5064d08070fb1545cf193c55f77294a1da6eec:style.css
+
     height: calc(100% - 120px);
     background-color: #F4F1EA;
     overflow-x: hidden;
@@ -878,40 +869,40 @@ hr{
 .main {
     /* position: absolute; */
     top: 60px;
-<<<<<<< HEAD:dashboard.css
+
     width: calc(100% - 25%); /* Adjusted width for smaller screens */
     left: 25%;
     min-height: calc(100vh - 60px);
     background: #f5f5f5;
     padding: 20px; /* Adjusted padding for smaller screens */
-=======
+
     width: calc(100% - 25%);
     left: 25%;
     min-height: calc(100vh - 60px);
     background: #f5f5f5;
     padding: 20px;
->>>>>>> ca5064d08070fb1545cf193c55f77294a1da6eec:style.css
+
 }
 .myDIV {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusted card width */
     gap: 10px;
-<<<<<<< HEAD:dashboard.css
-    padding: 25px 10px; /* Adjusted padding for smaller screens */
+
+    padding: 25px 10px; 
 }
 .addbook div {
-    flex: 0 0 100%; /* Initially, each div takes up full width */
-    max-width: 100%; /* Ensure divs don't exceed full width */
-    margin-bottom: 10px; /* Add some bottom margin for spacing between rows */
+    flex: 0 0 100%; 
+    max-width: 100%; 
+    margin-bottom: 10px;
 }
 
-/* Responsive adjustments for buttons */
+
 .prev {
     margin-top: 2px;
     display: flex;
     flex-wrap: wrap; /* Adjusted wrapping for smaller screens */
-=======
+
     padding: 25px 10px; 
 }
 .addbook div {
@@ -925,7 +916,7 @@ hr{
     margin-top: 2px;
     display: flex;
     flex-wrap: wrap; 
->>>>>>> ca5064d08070fb1545cf193c55f77294a1da6eec:style.css
+
 }
 
 .num2 {
@@ -935,7 +926,7 @@ hr{
     padding-top: 7px;
     text-align: center;
     color: #747171;
-<<<<<<< HEAD:dashboard.css
+
     margin-right: 5px; /* Adjusted margin for smaller screens */
     margin-bottom: 5px; /* Adjusted margin for smaller screens */
 }
@@ -945,7 +936,7 @@ hr{
     text-align: center;
     width: 80%; /* Occupy 80% of the container's width */
     height: 90%; /* Adjust the height */
-=======
+
     margin-right: 5px; 
     margin-bottom: 5px;
 }
@@ -955,7 +946,7 @@ hr{
     text-align: center;
     width: 80%; 
     height: 90%;
->>>>>>> ca5064d08070fb1545cf193c55f77294a1da6eec:style.css
+
     background-color: #F4F1EA;
 }
 
@@ -971,15 +962,15 @@ hr{
 }
 
 .addbook div {
-<<<<<<< HEAD:dashboard.css
+
     flex: 100%; /* Each div initially occupies 100% width */
     max-width: 100%; /* Ensure divs don't exceed full width */
     margin-bottom: 10px; /* Add some bottom margin for spacing between rows */
-=======
+
     flex: 100%;
     max-width: 100%; 
     margin-bottom: 10px; 
->>>>>>> ca5064d08070fb1545cf193c55f77294a1da6eec:style.css
+
 }
 
 .addbook input[type=text],
@@ -1000,58 +991,58 @@ select,
     color: #747171;
     height: 30px;
     border: 1px solid #AFAFAF;
-<<<<<<< HEAD:dashboard.css
+
     margin-right: 5px; /* Adjusted margin for smaller screens */
     margin-bottom: 5px; /* Adjusted margin for smaller screens */
 }
 .addbook2 div {
     flex: 0 0 calc(50% - 20px); /* Two columns layout on medium screens with spacing */
     margin: 5px; /* Add spacing between columns */
-=======
+
     margin-right: 5px;
     margin-bottom: 5px; 
 }
 .addbook2 div {
     flex: 0 0 calc(50% - 20px);
     margin: 5px; 
->>>>>>> ca5064d08070fb1545cf193c55f77294a1da6eec:style.css
+
 }
 .showall {
     margin: 1% 1%;
     text-align: start;
     width: 98%;
-<<<<<<< HEAD:dashboard.css
+
     height: auto; /* Adjust height based on content */
-=======
+
     height: auto; 
->>>>>>> ca5064d08070fb1545cf193c55f77294a1da6eec:style.css
+
     background-color: #F4F1EA;
 }
 
 .addbook2 {
     display: flex;
-<<<<<<< HEAD:dashboard.css
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-    justify-content: center; /* Align items horizontally at the center */
-=======
+
+    flex-wrap: wrap; 
+    justify-content: center; 
+
     flex-wrap: wrap;
     justify-content: center;
->>>>>>> ca5064d08070fb1545cf193c55f77294a1da6eec:style.css
+
     font-size: 14px;
 }
 
 .addbook2 div {
-<<<<<<< HEAD:dashboard.css
+
     flex: 0 0 100%; /* Each div occupies full width on small screens */
     font-weight: bold;
     padding: 12px;
     box-sizing: border-box; /* Include padding in element's total width */
-=======
+
     flex: 0 0 100%;
     font-weight: bold;
     padding: 12px;
     box-sizing: border-box; 
->>>>>>> ca5064d08070fb1545cf193c55f77294a1da6eec:style.css
+
 }
 
 .showall2 {
@@ -1064,29 +1055,28 @@ select,
 .addbook3 {
     display: flex;
     flex-wrap: wrap;
-<<<<<<< HEAD:dashboard.css
+
     justify-content: center; /* Align items horizontally at the center */
-=======
+
     justify-content: center; 
->>>>>>> ca5064d08070fb1545cf193c55f77294a1da6eec:style.css
+
     margin-top: 20px;
 }
 
 .addbook3 .rowaddbook3 {
-<<<<<<< HEAD:dashboard.css
+
     height: auto; /* Adjust height based on content */
-=======
     height: auto; 
->>>>>>> ca5064d08070fb1545cf193c55f77294a1da6eec:style.css
+
     padding-top: 10px;
 }
 
 .addbook3 div {
-<<<<<<< HEAD:dashboard.css
+
     flex: 0 0 100%; /* Each div occupies full width on small screens */
-=======
+
     flex: 0 0 100%; 
->>>>>>> ca5064d08070fb1545cf193c55f77294a1da6eec:style.css
+
     box-sizing: border-box;
     font-size: 14px;
     padding: 5px; /* Add some padding */
@@ -1094,20 +1084,20 @@ select,
 
 .first {
     display: flex;
-<<<<<<< HEAD:dashboard.css
+
     flex-wrap: wrap; /* Ensure buttons wrap on small screens */
-=======
+
     flex-wrap: wrap; 
->>>>>>> ca5064d08070fb1545cf193c55f77294a1da6eec:style.css
+
     margin-bottom: 5px;
 }
 
 .firstbtn, .secondbtn {
-<<<<<<< HEAD:dashboard.css
+
     width: calc(50% - 5px); /* Two buttons side by side with some spacing */
-=======
+
     width: calc(50% - 5px); 
->>>>>>> ca5064d08070fb1545cf193c55f77294a1da6eec:style.css
+
     margin-right: 5px;
     margin-bottom: 8px;
     border: none;
@@ -1126,19 +1116,19 @@ select,
 .hr {
     display: none;
     margin-bottom: 50px;
-<<<<<<< HEAD:dashboard.css
-    width: 90%; /* Adjust width for smaller screens */
+
+    width: 90%; 
 }
 .charts {
     display: grid;
     grid-template-columns: 1fr; /* Adjusted column layout for smaller screens */
-=======
+
     width: 90%; 
 }
 .charts {
     display: grid;
     grid-template-columns: 1fr; 
->>>>>>> ca5064d08070fb1545cf193c55f77294a1da6eec:style.css
+
     grid-gap: 20px;
     width: 100%;
     padding: 20px;
